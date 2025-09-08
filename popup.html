@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="tab-counter">
+    <h2>Tab Tracker</h2>
+    <p id="tab-count">Loading...</p>
+    <p id="settings-link"><a href="#" id="toggle-settings">Configure thresholds</a></p>
+    <div id="settings" style="display:none;">
+      <label for="yellowThresh">Green to Yellow Threshhold:</label><br>
+      <input type="range" id="yellowThresh" min="1" max="100" value="20">
+      <span id="yellowValue">25</span> tabs<br>
+      <label for="redThresh">Yellow to Red Threshold:</label><br>
+      <input type="range" id="redThresh" min="1" max="100" value="50">
+      <span id="redValue">50</span> tabs<br>
+      <button id="save-settings">Save Settings</button>
+    </div>
+  </div>
+  <div id="signature">
+    <small><a href="https://twitter.com/grave367" target="_blank">Powered by Autism</a></small>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

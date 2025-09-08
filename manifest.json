@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "tab tracker",
+  "version": "1.0",
+  "description": "extension to display the total number of open tabs across all windows, for those late night sessions, toiling in the salt mines",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Counter",
+    "default_icon": {
+      "16": "icon16.svg",
+      "32": "icon32.svg",
+      "48": "icon48.svg",
+      "128": "icon128.svg"
+    }
+  },
+  "options_page": "options.html"
+}
